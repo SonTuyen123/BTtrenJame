@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        form {
+            background: #e7da8a;
+        }
+
+        th {
+            background: #b2c3ea;
+            text-align: left;
+        }
+        p{
+            color: #76aaff;
+        }
+        label{
+            color: #4b7fde;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <table>
+        <tr>
+            <th colspan="2">ĐĂNG KÝ HOC VIÊN</th>
+        </tr>
+        <tr>
+            <td><label for="hoten">Họ và tên</label>
+            <td><input type="text" name="hoten" id="hoten"></td>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="ngayxinh">Ngày sinh</label>
+            <td><input type="text" name="ngày sinh" id="ngayxinh"></td>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Giới tính</label>
+            <td><input type="radio" name="nam" id="nam">Nam
+                <input type="radio" name="nam" id="nu">Nữ</td>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="diachi">Địa chỉ</label>
+            <td><input type="text" name="diachi" id="diachi" required></td>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="diachi">Lớp̉</label>
+            <td><select>
+                <option value="Lớp">-Chọn Lớp-</option>
+                <option>Lớp A</option>
+                <option>Lớp B</option>
+            </select></td>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="email">Email</label>
+            <td><input type="email" name="email" id="email" required>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="phone">Điện thoại</label>
+            <td><input type="text" name="phone" id="phone" required></td>
+            </td>
+        </tr>
+        <br>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit">Đăng ký</button>
+                <button type="submit">Đăng ký</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
