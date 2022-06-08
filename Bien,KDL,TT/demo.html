@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    VatLy = prompt("Nhập điểm Vật Lý ");
+    Hoa = prompt("Nhập điểm Hóa học ");
+    Sinh = prompt("Nhập điểm Sinh học");
+    let a = parseInt(VatLy);
+    let b = parseInt(Hoa);
+    let c = parseInt(Sinh)
+    let T = a + b + c
+    let Tb = T / 3
+    document.write("Tổng điểm các môn của một sinh viên các môn là: " + T);
+    document.write("<br>Tổng điểm trung bình các môn học là: " + Tb.toFixed(2));
+</script>
+</body>
+</html>
