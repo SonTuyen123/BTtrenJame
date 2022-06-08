@@ -2,36 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ứng dụng chuyển đổi tiền tệ</title>
+    <title>Ứng dụng chuyển đổi tiền tệ</title  >
 </head>
 <body>
 <input type="number" id="dauvao">
 <select id="sl1">
-    <option value="vnd">VND</option>
-    <option value="usd">USD</option>
+    <option value="1">VND</option>
+    <option value="23000">USD</option>
+    <option value="12">lao</option>
+    <option value="100">Pi</option>
 </select>
 <select id="sl2">
-    <option value="vnd">VND</option>
-    <option value="usd">USD</option>
+    <option value="1">VND</option>
+    <option value="23000">USD</option>
+    <option value="12">lao</option>
+    <option value="100">Pi</option>
 </select>
 <button onclick="chuyendoi ()">Convert</button>
 <p id="inra"></p>
 <script>
-function chuyendoi(){
-    let giatrivao = document.getElementById('dauvao').value;
-    let select1 = document.getElementById('sl1').value;
-    let select2 = document.getElementById('sl2').value;
-
-    if (select1 == select2){
-        document.getElementById("inra").innerHTML = "Result :"+giatrivao
+    function chuyendoi() {
+        let a = +document.getElementById('dauvao').value;
+        let b = +document.getElementById('sl1').value;
+        let c = +document.getElementById('sl2').value;
+        d=a*b/c
+        document.getElementById('inra').innerHTML = "Result: " + d
     }
-    if(select1 == "vnd" && select2 == "usd"){
-        document.getElementById("inra").innerHTML = "Result :"+ giatrivao/21000+" USD"
-    }if(select1 == "usd" && select2 == "vnd"){
-        document.getElementById("inra").innerHTML = "Result :"+ giatrivao*21000+" VND"
-    }
-}
 </script>
-
 </body>
 </html>
