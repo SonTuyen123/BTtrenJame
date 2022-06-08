@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng Dụng đổi tiền</title>
+</head>
+<body>
+<h2>Caculator</h2>
+<input type="number" id="a">
+<input type="number" id="b">
+<br><br>
+<button onclick="add()">Add(+)</button>
+<button onclick="sub()">Sud(-)</button>
+<button onclick="mu()">Mu(X)</button>
+<button onclick="div()">Div(/)</button>
+<p id="kq">ttt</p>
+</body>
+<script>
+    function add(){
+        let giatria = +document.getElementById('a').value;
+        let giatrib = +document.getElementById('b').value;
+       document.getElementById("kq").innerHTML = "Réult :" +(giatria +giatrib)
+    }
+    function sub(){
+        let giatria = +document.getElementById('a').value;
+        let giatrib = +document.getElementById('b').value;
+        document.getElementById("kq").innerHTML = "Réult :" +(giatria - giatrib)
+    }
+    function mu(){
+        let giatria = +document.getElementById('a').value;
+        let giatrib = +document.getElementById('b').value;
+        document.getElementById("kq").innerHTML = "Réult :" +(giatria * giatrib)
+    }
+    function div(){
+        let giatria = +document.getElementById('a').value;
+        let giatrib = +document.getElementById('b').value;
+        document.getElementById("kq").innerHTML = "Réult :" +(giatria / giatrib)
+    }
+</script>
+</html>
