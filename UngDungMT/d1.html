@@ -19,18 +19,34 @@
     function add(a) {
         let giatria = +document.getElementById('a').value;
         let giatrib = +document.getElementById('b').value;
-        if (a == '+') {
-            document.getElementById("kq").innerHTML = "Réult :" + (giatria + giatrib)
-        }
-        if (a == '-') {
-            document.getElementById("kq").innerHTML = "Réult :" + (giatria - giatrib)
-        }
-        if (a == '*') {
-            document.getElementById("kq").innerHTML = "Réult :" + (giatria * giatrib)
-        }
-        if (a == '/') {
-            document.getElementById("kq").innerHTML = "Réult :" + (giatria / giatrib)
+        // if (a == '+') {
+        //     document.getElementById("kq").innerHTML = "Réult :" + (giatria + giatrib)
+        // }
+        // if (a == '-') {
+        //     document.getElementById("kq").innerHTML = "Réult :" + (giatria - giatrib)
+        // }
+        // if (a == '*') {
+        //     document.getElementById("kq").innerHTML = "Réult :" + (giatria * giatrib)
+        // }
+        // if (a == '/') {
+        //     document.getElementById("kq").innerHTML = "Réult :" + (giatria / giatrib)
+        // }
+        switch (a) {
+            case '+':
+                document.getElementById("kq").innerHTML = "Réult :" + (giatria + giatrib)
+                break;
+            case '-':
+                document.getElementById("kq").innerHTML = "Réult :" + (giatria - giatrib)
+                break;
+            case '*':
+                document.getElementById("kq").innerHTML = "Réult :" + (giatria * giatrib)
+                break;
+            case '/':
+                document.getElementById("kq").innerHTML = "Réult :" + (giatria / giatrib)
+                break;
+
         }
     }
+
 </script>
 </html>
