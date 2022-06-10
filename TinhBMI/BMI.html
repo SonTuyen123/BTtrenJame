@@ -14,7 +14,7 @@
     function kiemtra() {
         let a = +document.getElementById("kg").value;
         let b = +document.getElementById("m").value;
-        let bmi = a / b;
+        let bmi = a / (Math.pow(b,2));
 
         if (bmi < 18)
             document.getElementById("in").innerHTML = "Chỉ số BMI là: " + bmi + " Bạn: " + " <strong>Thiếu cân</strong>"
