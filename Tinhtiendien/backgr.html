@@ -12,28 +12,30 @@
 <p id="kq"></p>
 <script>
     function add() {
-        let a = +document.getElementById('a').value;
-        if (a > 0 && a <= 50) {
-            T = a * 1600
-            document.getElementById("kq").innerHTML = "Số tiền của ban đang ở bậc 1<br> Số tiền phải trả la :" + T
+        let sodien = +document.getElementById('a').value;
 
-        } else if (a <= 100) {
-            T = 50 * 1600 + (a - 50) * 1700
-            document.getElementById("kq").innerHTML = "Số tiền của ban đang ở bậc 2<br> Số tiền phải trả la :" + T
-        } else if (a <= 200) {
-            T = 50 * 1600 + 50 * 1700 + (a - 100) * 2000
-            document.getElementById("kq").innerHTML = "Số tiền của ban đang ở bậc 3<br> Số tiền phải trả la :" + T
-        } else if (a <= 300) {
-            T = 50 * 1600 + 50 * 1700 + 50 * 2000 + (a - 200) * 2500
-            document.getElementById("kq").innerHTML = "Số tiền của ban đang ở bậc 4<br> Số tiền phải trả la :" + T
-        } else if (a <= 400) {
-            T = 50 * 1600 + 50 * 1700 + 50 * 2000 + 50 * 2500 + (a - 200) * 2800
-            document.getElementById("kq").innerHTML = "Số tiền của ban đang ở bậc 5<br> Số tiền phải trả la :" + T
+        if (sodien > 0 && sodien <= 50) {
+            T = sodien * 1600
+            Result = "Số tiền của ban đang ở bậc 1<br> Số tiền phải trả la :" + T
+
+        } else if (sodien <= 100) {
+            T = 50 * 1600 + (sodien - 50) * 1700
+            Result = "Số tiền của ban đang ở bậc 2<br> Số tiền phải trả la :" + T
+        } else if (sodien <= 200) {
+            T = 50 * 1600 + 50 * 1700 + (sodien - 100) * 2000
+            Result = "Số tiền của ban đang ở bậc 3<br> Số tiền phải trả la :" + T
+        } else if (sodien <= 300) {
+            T = 50 * 1600 + 50 * 1700 + 50 * 2000 + (sodien - 200) * 2500
+            Result = "Số tiền của ban đang ở bậc 4<br> Số tiền phải trả la :" + T
+        } else if (sodien <= 400) {
+            T = 50 * 1600 + 50 * 1700 + 50 * 2000 + 50 * 2500 + (sodien - 200) * 2800
+            Result = "Số tiền của ban đang ở bậc 5<br> Số tiền phải trả la :" + T
         } else {
-            T = 50 * 1600 + 50 * 1700 + 50 * 2000 + 50 * 2500 + 50 * 2800 + (a - 300) * 2900
-            document.getElementById("kq").innerHTML = "Số tiền của ban đang ở bậc 6<br> Số tiền phải trả la :" + T
+            T = 50 * 1600 + 50 * 1700 + 50 * 2000 + 50 * 2500 + 50 * 2800 + (sodien - 300) * 2900
+            Result = "Số tiền của ban đang ở bậc 6<br> Số tiền phải trả la :" + T
 
         }
+        document.getElementById("kq").innerHTML = Result.toLocaleString('de');
     }
 </script>
 </body>
