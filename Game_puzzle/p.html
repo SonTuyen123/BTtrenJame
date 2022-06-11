@@ -3,13 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        img {
 
+            width: 600px;
+            height: 150px;
+        }
+    </style>
 </head>
 <body>
-<img onclick="img1 ()" src="IMG/1.jpg">
+<img onclick="click1 ()" id="image-1" data-id="meo1" src="IMG/meo1.jpg">
+<br>
+<img onclick="click2 ()" id="image-2" data-id="khi2" src="IMG/khi2.jpg">
+<br>
+<img onclick="click3()" id="image-3" data-id="gau3" src="IMG/panda3.jpg">
+<br>
+<img onclick="click4()" id="image-4" data-id="meo4" src="IMG/cat4.jpg">
+<br>
+<img onclick="click5()" id="image-5" data-id="khi5" src="IMG/monky5.jpg">
 <script>
-    function img1 (){
-        
+    function click1() {
+        let srcImage;
+        let valueDataId;
+
+        let nameDataID = document.getElementById('image-1').getAttribute('data-id');
+        if (nameDataID === 'khi1') {
+            srcImage = 'IMG/gau1.jpg';
+            valueDataId = 'gau1';
+        } else if (nameDataID === 'gau1') {
+            srcImage = 'IMG/meo1.jpg'
+            valueDataId = 'meo1'
+        } else {
+            srcImage = 'IMG/khi1.jpg'
+            valueDataId = 'khi1'
+        }
+        document.getElementById('image-1').setAttribute('src', srcImage);
+        document.getElementById('image-1').setAttribute('data-id', valueDataId)
+        // checkWin();
+
+    }
+
+    function click2() {
+        let srcImage;
+        let valueDataId;
+
+        let nameDataID = document.getElementById('image-2').getAttribute('data-id');
+        if (nameDataID === 'khi2') {
+            srcImage = 'IMG/gau2.jpg';
+            valueDataId = 'gau2';
+        } else if (nameDataID === 'gau2') {
+            srcImage = 'IMG/meo2.jpg'
+            valueDataId = 'meo2'
+        } else {
+            srcImage = 'IMG/khi2.jpg'
+            valueDataId = 'khi2'
+        }
+        document.getElementById('image-2').setAttribute('src', srcImage);
+        document.getElementById('image-2').setAttribute('data-id', valueDataId)
+        // checkWin();
+    }
+
+    function click4() {
+        let srcImage;
+        let valueDataId;
+
+        let nameDataID = document.getElementById('image-4').getAttribute('data-id');
+        if (nameDataID === 'meo4') {
+            srcImage = 'IMG/panda4.jpg';
+            valueDataId = 'gau4';
+        } else if (nameDataID === 'gau4') {
+            srcImage = 'IMG/monky4.jpg'
+            valueDataId = 'khi4'
+        } else {
+            srcImage = 'IMG/cat4.jpg'
+            valueDataId = 'meo4'
+        }
+        document.getElementById('image-4').setAttribute('src', srcImage);
+        document.getElementById('image-4').setAttribute('data-id', valueDataId)
+        checkWin();
+    }
+
+    function click3() {
+        let srcImage;
+        let valueDataId;
+
+        let nameDataID = document.getElementById('image-3').getAttribute('data-id');
+        if (nameDataID === 'meo3') {
+            srcImage = 'IMG/panda3.jpg';
+            valueDataId = 'gau3';
+        } else if (nameDataID === 'gau3') {
+            srcImage = 'IMG/monky3.jpg'
+            valueDataId = 'khi3'
+        } else {
+            srcImage = 'IMG/cat3.jpg'
+            valueDataId = 'meo3'
+        }
+        document.getElementById('image-3').setAttribute('src', srcImage);
+        document.getElementById('image-3').setAttribute('data-id', valueDataId)
+        // checkWin()
+    }
+
+    function click5() {
+        let srcImage;
+        let valueDataId;
+
+        let nameDataID = document.getElementById('image-5').getAttribute('data-id');
+        if (nameDataID === 'khi5') {
+            srcImage = 'IMG/panda5.jpg';
+            valueDataId = 'gau5';
+        } else if (nameDataID === 'gau5') {
+            srcImage = 'IMG/cat5.jpg'
+            valueDataId = 'meo5'
+        } else {
+            srcImage = 'IMG/monky5.jpg'
+            valueDataId = 'khi5'
+        }
+        document.getElementById('image-5').setAttribute('src', srcImage);
+        document.getElementById('image-5').setAttribute('data-id', valueDataId)
+        // checkWin()
+    }
+
+    function checkWin() {
+        let nameDataID1 = document.getElementById('image-1').getAttribute('data-id');
+        let nameDataID2 = document.getElementById('image-2').getAttribute('data-id');
+        let nameDataID3 = document.getElementById('image-3').getAttribute('data-id');
+        let nameDataID4 = document.getElementById('image-4').getAttribute('data-id');
+        let nameDataID5 = document.getElementById('image-5').getAttribute('data-id');
+        if (nameDataID1 === nameDataID2){
+            if (== nameDataID3 == nameDataID4 == nameDataID5){
+            document.getElementById('image-1').style.border = '2px solid red';
+            document.getElementById('image-2').style.border = '2px solid red';
+            document.getElementById('image-3').style.border = '2px solid red';
+            document.getElementById('image-4').style.border = '2px solid red';
+            document.getElementById('image-5').style.border = '2px solid red';
+        }
+    else
+        {
+            document.getElementById('image-1').style.border = '';
+            document.getElementById('image-2').style.border = '';
+            document.getElementById('image-3').style.border = '';
+            document.getElementById('image-4').style.border = '';
+            document.getElementById('image-5').style.border = '';
+        }
+
     }
 </script>
 </body>
