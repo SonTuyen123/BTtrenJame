@@ -6,13 +6,14 @@
     <title>Máy tính</title>
     <style>
         table {
-
-            border: 4px solid;
+            width: 300px;
+            background-color: red;
+        }
+        input {
+            width: 97%;
+            height: 50px;
         }
 
-        .button {
-            color: #0433ff;
-        }
     </style>
 </head>
 
@@ -50,19 +51,34 @@
 </table>
 
 <script>
+    let checkOperator = false;
+
     let b = document.getElementById("result")
     function clearScreen() {
         b.value = "";
     }
     function a(value) {
-         b.value += value;
+        switch (value) {
+            case '+':
+            case '-':
+            case '*':
+            case '/':
+                if (!checkOperator) {
+                   b.value += value;
+                    checkOperator = true;
+                }
+                break;
+            default:
+                b.value += value;
+                checkOperator = false;
+        }
     }
     function calculate() {
         var p = b.value;
         var q = eval(p);
         b.value = q;
     }
-    //xoa phaanf tu cuooi cua 1 chuoi
+
 </script>
 </body>
 
