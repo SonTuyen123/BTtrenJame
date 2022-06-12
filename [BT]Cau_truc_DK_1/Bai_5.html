@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diem_kt = +prompt('nhập điểm bài kiểm tra:')
+    let diem_giua_ky = +prompt('Nhập điểm thi giữ kỳ')
+    let diem_cuoi_ky = +prompt('Nhập điểm thi cuối kỳ')
+    let diem_tong_ket = (diem_kt + diem_giua_ky * 2 + diem_cuoi_ky * 3) / 6
+    if (diem_tong_ket >= 8) {
+        alert('học sinh xếp hạng học lực Giỏi')
+    }
+    if (diem_tong_ket >= 7) {
+        alert('học sinh xếp hạng học lực Khá')
+    }
+    if (diem_tong_ket >= 6.5) {
+        alert('học sinh xếp hạng học lực Trung bình')
+    }
+    if (diem_tong_ket >= 4.5) {
+        alert('học sinh xếp hạng học lực kém')
+    }
+    if (diem_tong_ket >= 0) {
+        alert('học sinh xếp hạng học lực Yếu')
+    }
+</script>
+</body>
+</html>

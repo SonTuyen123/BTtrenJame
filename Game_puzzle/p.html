@@ -11,7 +11,7 @@
         }
     </style>
 </head>
-<body>
+<body style="text-align: center">
 <img onclick="click1 ()" id="image-1" data-id="meo1" src="IMG/meo1.jpg">
 <br>
 <img onclick="click2 ()" id="image-2" data-id="khi2" src="IMG/khi2.jpg">
@@ -39,10 +39,8 @@
         }
         document.getElementById('image-1').setAttribute('src', srcImage);
         document.getElementById('image-1').setAttribute('data-id', valueDataId)
-        // checkWin();
-
+        checkWin();
     }
-
     function click2() {
         let srcImage;
         let valueDataId;
@@ -60,7 +58,7 @@
         }
         document.getElementById('image-2').setAttribute('src', srcImage);
         document.getElementById('image-2').setAttribute('data-id', valueDataId)
-        // checkWin();
+        checkWin();
     }
 
     function click4() {
@@ -100,7 +98,7 @@
         }
         document.getElementById('image-3').setAttribute('src', srcImage);
         document.getElementById('image-3').setAttribute('data-id', valueDataId)
-        // checkWin()
+        checkWin()
     }
 
     function click5() {
@@ -120,32 +118,42 @@
         }
         document.getElementById('image-5').setAttribute('src', srcImage);
         document.getElementById('image-5').setAttribute('data-id', valueDataId)
-        // checkWin()
+        checkWin()
     }
 
+    // function checkWin() {
+    //     let nameDataID1 = document.getElementById('image-1').getAttribute('data-id');
+    //     let nameDataID2 = document.getElementById('image-2').getAttribute('data-id');
+    //     let nameDataID3 = document.getElementById('image-3').getAttribute('data-id');
+    //     let nameDataID4 = document.getElementById('image-4').getAttribute('data-id');
+    //     let nameDataID5 = document.getElementById('image-5').getAttribute('data-id');
+    //     if (nameDataID1 === nameDataID2) {
+    //         // if (nameDataID3 === nameDataID4 === nameDataID5) {
+    //             document.getElementById('image-1').style.border = '2px solid red';
+    //             document.getElementById('image-2').style.border = '2px solid red';
+    //             // document.getElementById('image-3').style.border = '2px solid red';
+    //             // document.getElementById('image-4').style.border = '2px solid red';
+    //             // document.getElementById('image-5').style.border = '2px solid red';
+    //         } else {
+    //             document.getElementById('image-1').style.border = '';
+    //             document.getElementById('image-2').style.border = '';
+    //             // document.getElementById('image-3').style.border = '';
+    //             // document.getElementById('image-4').style.border = '';
+    //             // document.getElementById('image-5').style.border = '';
+    //         }
+    //
+    // }
     function checkWin() {
         let nameDataID1 = document.getElementById('image-1').getAttribute('data-id');
         let nameDataID2 = document.getElementById('image-2').getAttribute('data-id');
-        let nameDataID3 = document.getElementById('image-3').getAttribute('data-id');
-        let nameDataID4 = document.getElementById('image-4').getAttribute('data-id');
-        let nameDataID5 = document.getElementById('image-5').getAttribute('data-id');
-        if (nameDataID1 === nameDataID2){
-            if (== nameDataID3 == nameDataID4 == nameDataID5){
+
+        if (nameDataID1 === nameDataID2) {
             document.getElementById('image-1').style.border = '2px solid red';
             document.getElementById('image-2').style.border = '2px solid red';
-            document.getElementById('image-3').style.border = '2px solid red';
-            document.getElementById('image-4').style.border = '2px solid red';
-            document.getElementById('image-5').style.border = '2px solid red';
-        }
-    else
-        {
+        } else {
             document.getElementById('image-1').style.border = '';
             document.getElementById('image-2').style.border = '';
-            document.getElementById('image-3').style.border = '';
-            document.getElementById('image-4').style.border = '';
-            document.getElementById('image-5').style.border = '';
         }
-
     }
 </script>
 </body>

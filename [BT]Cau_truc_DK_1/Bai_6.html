@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let doanh_so = +prompt('nhập giá trị tổng doanh số bán hàng (Triệu đồng):')
+    let hoa_hong;
+    if (doanh_so <= 100) {
+        hoa_hong = doanh_so * 5 / 100;
+
+    } else if (doanh_so <= 300) {
+        hoa_hong = doanh_so * 10 / 100;
+
+    } else {
+        hoa_hong = doanh_so * 20 / 100;
+    }
+    document.write('Với tổng doanh số là: ' + doanh_so + ' (Triệu đồng) thì hoa hồng nhận được là : ' + hoa_hong +' (Triệu đông)')
+
+</script>
+</body>
+</html>

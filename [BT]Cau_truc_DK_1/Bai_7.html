@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let phi_thue_bao = 25000;
+    let tong;
+    let minute = +prompt('nhập tổng số phút gọi là :')
+    if (minute <= 50) {
+        tong = phi_thue_bao + minute * 600;
+    }
+    if (minute <= 200 && minute >= 50) {
+        tong = phi_thue_bao + (minute - 50) * 400 + 50 * 200
+    }if(minute >=200)
+    {
+        tong = phi_thue_bao + minute * 200
+    }
+    document.write('Cước điện thoại bàn cho một hộ gia đình với số phút gọi là: '+minute+ ' phút. Ứ́ng với: '+tong.toLocaleString('de')+' Nghìn đồng')
+</script>
+</body>
+</html>
+
+
+
