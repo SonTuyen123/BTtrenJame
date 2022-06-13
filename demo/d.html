@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+  // var i = 5;
+  //
+  // var count = 0;
+  //
+  // for (var i = 0; i < 10; i+=2) {
+  //
+  //   count += i;
+  //     document.write(count)
+  // }
+  // 0 2 6 12 20
+  // const products = ['dmitripavlutin', 'anonystick'];
+  //
+  // for (const product of products) {
+  //     console.log(product)
+  //     break;
+  // }
+  // ['a', 'b', 'c'].forEach(
+  //     val => console.log(val)     // a, b, c (array values)
+  // );
+  // Biến lưu giá trị người dùng nhập vào
+  // var value = null;
+  //
+  // // Thực thi
+  // do {
+  //     value = prompt("Nhập vào số từ 1 -> 10");
+  // }
+  // while (value < 1 || value > 10);
+  //
+  // // Sau khi nhập đúng thì in ra màn hình
+  // alert("Số bạn vừa nhập là " + value);
+  //
+  var i = 0;
+  // Vòng lặp ngoài
+  while (i <= 9)
+  {
+      // Mỗi lần lặp gan j = 0;
+      var j = 0;
+
+      // Lặp nếu j < <=
+      while (j <= 9)
+      {
+          // In ra màn hình
+          document.write('['+i+']['+j+'] ');
+
+          // Tăng j lên nếu không sẽ bị lặp vô hạn
+          j++;
+      }
+      // Xuống hàng
+      document.write('<br/>');
+
+      //Tăng i lên nếu không sẽ bị lặp vô hạn
+      i++;
+  }
+</script>
+
+</body>
+</html>
