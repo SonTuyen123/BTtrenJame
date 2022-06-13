@@ -41,6 +41,7 @@
         document.getElementById('image-1').setAttribute('data-id', valueDataId)
         checkWin();
     }
+
     function click2() {
         let srcImage;
         let valueDataId;
@@ -121,40 +122,40 @@
         checkWin()
     }
 
-    // function checkWin() {
-    //     let nameDataID1 = document.getElementById('image-1').getAttribute('data-id');
-    //     let nameDataID2 = document.getElementById('image-2').getAttribute('data-id');
-    //     let nameDataID3 = document.getElementById('image-3').getAttribute('data-id');
-    //     let nameDataID4 = document.getElementById('image-4').getAttribute('data-id');
-    //     let nameDataID5 = document.getElementById('image-5').getAttribute('data-id');
-    //     if (nameDataID1 === nameDataID2) {
-    //         // if (nameDataID3 === nameDataID4 === nameDataID5) {
-    //             document.getElementById('image-1').style.border = '2px solid red';
-    //             document.getElementById('image-2').style.border = '2px solid red';
-    //             // document.getElementById('image-3').style.border = '2px solid red';
-    //             // document.getElementById('image-4').style.border = '2px solid red';
-    //             // document.getElementById('image-5').style.border = '2px solid red';
-    //         } else {
-    //             document.getElementById('image-1').style.border = '';
-    //             document.getElementById('image-2').style.border = '';
-    //             // document.getElementById('image-3').style.border = '';
-    //             // document.getElementById('image-4').style.border = '';
-    //             // document.getElementById('image-5').style.border = '';
-    //         }
-    //
-    // }
     function checkWin() {
         let nameDataID1 = document.getElementById('image-1').getAttribute('data-id');
         let nameDataID2 = document.getElementById('image-2').getAttribute('data-id');
+        let nameDataID3 = document.getElementById('image-3').getAttribute('data-id');
+        let nameDataID4 = document.getElementById('image-4').getAttribute('data-id');
+        let nameDataID5 = document.getElementById('image-5').getAttribute('data-id');
 
-        if (nameDataID1 === nameDataID2) {
+        if (nameDataID1 === nameDataID2 && nameDataID2 === nameDataID3 && nameDataID3 === nameDataID4 && nameDataID4 === nameDataID5) {
             document.getElementById('image-1').style.border = '2px solid red';
             document.getElementById('image-2').style.border = '2px solid red';
+            document.getElementById('image-3').style.border = '2px solid red';
+            document.getElementById('image-4').style.border = '2px solid red';
+            document.getElementById('image-5').style.border = '2px solid red';
         } else {
             document.getElementById('image-1').style.border = '';
             document.getElementById('image-2').style.border = '';
+            document.getElementById('image-3').style.border = '';
+            document.getElementById('image-4').style.border = '';
+            document.getElementById('image-5').style.border = '';
         }
     }
+
+    // function checkWin() {
+    //     let nameDataID1 = document.getElementById('image-1').getAttribute('data-id');
+    //     let nameDataID2 = document.getElementById('image-2').getAttribute('data-id');
+    //
+    //     if (nameDataID1 === nameDataID2) {
+    //         document.getElementById('image-1').style.border = '2px solid red';
+    //         document.getElementById('image-2').style.border = '2px solid red';
+    //     } else {
+    //         document.getElementById('image-1').style.border = '';
+    //         document.getElementById('image-2').style.border = '';
+    //     }
+    // }
 </script>
 </body>
 </html>

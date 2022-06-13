@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Giải phương trình bậc 2</p>
+<input type="number" id="a" value=""> X<sup>2</sup>
++
+<input type="number" id="b" value=""> X
++
+<input type="number" id="c" value="">
+=
+<button onclick="ptb2()">Kết quả</button>
+
+<button onclick="reset()">Reset</button>
+
+<p>Kết quả là: <strong id="ketqua"></strong>
+</P>
+<script>
+    function ptb2() {
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        let c = +document.getElementById('c').value;
+
+        if (a == 0) {
+
+            if (b == 0) {
+                if (c == 0) {
+                    document.getElementById("ketqua").innerHTML = "Phương trình vô số nghiệm"
+                } else {
+                    document.getElementById("ketqua").innerHTML = 'Phương trình vô nghiệm'
+                }
+            } else {
+                document.getElementById("ketqua").innerHTML = "Phương trình có nghiệm duy nhất = " + (-c / b).toFixed(3)
+            }
+        } else {
+            var delta = b * b - 4 * a * c;
+
+            if (delta > 0) {
+                var x1 = (-b + Math.sqrt(delta)) / (2 * a);
+                var x2 = (-b - Math.sqrt(delta)) / (2 * a);
+                document.getElementById("ketqua").innerHTML = "Nghiệm thứ nhất x1 = " + x1.toFixed(3) + "<br>" + "Nghiệm thứ hai x2 = " + x2.toFixed(3);
+            } else if (delta == 0) {
+                var sum = -b / 2 * a
+                document.getElementById("ketqua").innerHTML = "Phuong trinh co nghiem kep : x1 = x2  = " + sum.toFixed(3);
+            } else {
+                document.getElementById("ketqua").innerHTML = 'Phương trình vô nghiệm'
+            }
+        }
+    }
+    function reset(){
+        document.getElementById('a').value = ""
+        document.getElementById('b').value = ""
+        document.getElementById('c').value = ""
+        document.getElementById("ketqua").innerHTML = ' '
+    }
+</script>
+</body>
+</html>
