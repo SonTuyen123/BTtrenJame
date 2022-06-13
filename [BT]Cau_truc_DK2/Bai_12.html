@@ -9,10 +9,22 @@
 <p>r: lãi suất (%) hàng tháng</p>
 <p>n: số tháng gửi tiền</p>
 <input type="number" id="a" value="" placeholder="a">
-* ( 1 + <input type="number" id="r" value="" placeholder="r">)<sup><input type="number" id="n" value="" placeholder="n"></sup> = T<sub>n</<sub>
-
+*
+( 1 + <input type="number" id="r" value="" placeholder="r">)<sup><input type="number" id="n" value="" placeholder="n">)</sup>
+= T
+<br>
+<br>
+<button onclick="a()">Tính tiền</button>
+<p id="result"></p>
 <script>
+    function a() {
+        let tien_von = document.getElementById('a').value;
+        let lai_suat_thang = document.getElementById('r').value;
+        let so_thang_gui = document.getElementById('n').value;
+        T = tien_von * (Math.pow(1 + (lai_suat_thang / 100), so_thang_gui))
+        document.getElementById("result").innerHTML = 'Cả vốn lẫn lại sau ' + so_thang_gui + ' tháng la :' + T.toLocaleString('de')
 
+    }
 </script>
 </body>
 </html>
