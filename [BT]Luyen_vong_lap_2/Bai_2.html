@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = prompt('nhập số nguyên dương ')
+    let b =1
+    if (number < 0){
+        alert('không tính được')
+    }else if(number ==0){
+        alert('gia thừa của '+number+ ' là 1')
+    }else {
+        for(let i = 1;i <= number ;i++){
+            b = b * i
+        }document.write('Giai thừa của '+number+ ' là : '+b)
+    }
+</script>
+</body>
+</html>

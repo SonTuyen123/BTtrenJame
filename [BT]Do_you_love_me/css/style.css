@@ -1,0 +1,20 @@
+.container {
+    width: 1000px;
+}
+
+.content {
+    margin: 0 auto;
+    width: 400px;
+    top: 300px;
+}
+
+#btn-no {
+    position: absolute;
+    top: 10%;
+    left: 400px;
+}
+#btn-yes{
+    position: absolute;
+    top: 10%;
+    left: 350px;
+}
