@@ -6,16 +6,18 @@
 </head>
 <body>
 <button onclick="chon()">Hãy thử đoán xem</button>
+<p id="in"></p>
 <script>
     function chon(){
         let num1 = prompt('Nhập number1:');
         let num2 = prompt('Nhập number2:');
         let a = Math.floor((Math.random()* (num2 -num1 + 1)) + num1);
-        console.log(a)
+       document.getElementById("in").innerHTML = "Kết quả là:"+a
         let b = prompt('Số muốn đoán:')
         for(let count = 0; count < 3; count ++){
             if(a == b){
                 alert('Bạn thắng!')
+                break;
             }else if(a >b){
                 alert('mời nhập số lơn hơn')
             }else {

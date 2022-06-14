@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body >
 <script>
     let n = +prompt('nhập n')
-    function check(i) {
 
+    function check(i) {
         flag = false;
         for (let i = 2; i < n; i++) {
             if (n % i == 0) {
@@ -20,12 +20,14 @@
             }
         }
     }
-     let count = 0;
-    while (count < 20){
-        if (check(i)){
+
+    let count = 0;
+    while (count < 20) {
+        if (check(i)) {
             console.log(i);
-            count ++;
-        } i ++
+            count++;
+        }
+        i++
     }
 
 </script>
