@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = +prompt('nhập n')
+    let count = 0;
+    let i = 0
+    let sum = 0;
+    while (count < number){
+        if(i % 7 == 0){
+            document.write('\n'+i);
+            sum += i;
+            count++
+        }i++;
+    }
+    document.write('<br>Tổng 30 số đầu tiên là:'+sum)
+</script>
+</body>
+</html>
