@@ -6,5 +6,27 @@
     <script src="sss.js"></script>
 </head>
 <body>
+
+<script>
+    // var a = new Array["a","b", "c"];
+    // a[a.length] = "cccc"
+    // alert(a)4
+    // let arr = [100, 2, "BMW"]
+    // document.write(arr.sort() + "<br>")
+    // document.write(arr.reverse())
+
+    let points = [40, 100, 1, 25, 25, 10]
+    points.sort(function(a, b) {
+        return a - b
+    })
+    document.write(points + "<br>");
+
+    points.sort(function(a, b) {
+        return b - a
+    })
+    document.write(points);
+</script>
+
+
 </body>
 </html>
