@@ -20,5 +20,5 @@ function changeValue(){
             data += array[i][j]
         }
     }
-    data += b.innerHTML = data;
+    data += b.innerHTML = "<hr/>" + data;
 }
