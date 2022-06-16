@@ -7,7 +7,7 @@ function dich() {
         if (b !== array1[i]) {
             document.getElementById('in').innerHTML = 'không tim thấy';
 
-        }else {
+        } else {
             document.getElementById('in').innerHTML = array2[i];
             break;
         }
