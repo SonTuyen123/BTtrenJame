@@ -7,7 +7,7 @@ for (let i = 0; i < 5; i++) {
     for (let j = 0; j < 5; j++) {
         data += array[i][j];
     }
-}
+}console.
 document.write(data)
 function changeValue(){
     let positionX = prompt('X :');
