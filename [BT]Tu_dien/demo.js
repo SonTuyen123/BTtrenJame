@@ -4,8 +4,12 @@ function dich() {
     let b = document.getElementById('a').value;
     let result = "";
     for (let i = 0; i < array1.length; i++) {
-        if (b === array1[i]) {
+        if (b !== array1[i]) {
+            document.getElementById('in').innerHTML = 'không tim thấy';
+
+        }else {
             document.getElementById('in').innerHTML = array2[i];
+            break;
         }
     }
 
