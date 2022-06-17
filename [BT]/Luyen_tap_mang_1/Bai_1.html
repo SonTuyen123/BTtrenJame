@@ -7,18 +7,14 @@
 <body>
 <script>
     let array = [12, 11, 15, 14, 22, 28, 44, 1, 6, 10]
-    let index = -1;
-    for (let i = 0; i < array.length; i++) {
+    let count = 0;
+    for (var i = 0; i < array.length; i++) {
         if (array[i] >= 10) {
-            index = i;
+             count ++
+            console.log(i)
         }
     }
-    if (index == -1) {
-        alert('không có giá trị nào lớn hơn 10');
-    } else {
-        alert(`có ${i} số 10 suất hiện trong mảng`)
-    }
-
+   document.write(`có ${count} sô 10 suất hiện trong mảng`)
 
 </script>
 </body>
