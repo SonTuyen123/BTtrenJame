@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function vowel_count(str1)
+    {
+        let list = "zxcvbnmasdfghjklqwertyuiopZXCVBNMASDFGHJKLQWERTYUIOP";
+        let count = 0;
+        for(let i = 0; i < str1.length ; i++)
+        {
+            if (list.indexOf(str1[i]) !== -1)
+            {
+                count += 1;
+            }
+        }
+        return count;
+    }
+    document.write(vowel_count("Tuyen"));
+</script>
+</body>
+</html>
