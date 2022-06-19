@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+    Cách 1
+     */
+    let ar = [0,1,2,3,4,5,6,7,8,9];
+    ar.sort(function (a,b){
+        return b - a;
+    });
+    alert(ar);
+    /*
+    cách 2
+     */
+
+    let myarray = ["Kiyoshi", "Honda", "Ajinomoto", "Suzuki"];
+    myarray.sort(function(a, b) {
+        if (a < b) {
+            return 1;
+        }
+        if (a > b) {
+            return -1;
+        }
+        return 0;
+    });
+    console.log(myarray);
+</script>
+</body>
+</html>
