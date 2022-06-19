@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let array1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let array2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+
+
+    function findByName1(){
+        let keyword = prompt("mời nhập từ cần tìm");
+        let index = -1;
+        for (let i = 0; i < array1.length; i++) {
+            if(array1[i] == keyword){
+                index = i;
+            }
+        }
+        if(index != -1){
+            alert(array2[index])
+        }else {
+            alert('không tìm thấy !')
+        }
+    }
+    findByName1();
+    // function findByName() {
+    //     let keyword = prompt('nhập từ cần tìm')
+    //     for (let i = 0; i < array1.length; i++) {
+    //         if (array1[i] == keyword) return i;
+    //     }
+    //     return -1;
+    // }
+
+    // function translate(){
+    //     let i = findByName();
+    //     if(i == -1){
+    //         alert('không tìm thấy !');
+    //     }
+    //     else {
+    //         alert(array2[i]);
+    //     }
+    // }
+
+
+
+</script>
+</body>
+</html>
