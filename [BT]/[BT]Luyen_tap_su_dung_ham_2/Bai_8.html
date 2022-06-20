@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+    Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.
+     */
+    let number = +prompt('nhập vào độ dài của mảng:');
+    let arr =[];
+    for (let i = 0; i < number; i++) {
+        let x = +prompt(`Nhập phần tử thứ ${i + 1} :`);
+       arr.push(x);
+    }
+    let newarr = arr.reverse();
+    document.write(newarr);
+</script>
+</body>
+</html>

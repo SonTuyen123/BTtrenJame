@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+     Viết hàm tính diện tích, hàm tính chu vi hình tròn.
+     Gọi hàm vừa xây dựng được
+     */
+    function ChuVi(a) {
+        C = a * 2 * 3.14;
+        return C;
+    }
+
+    function dienTich(r) {
+        S = r * r * 3.14;
+        return S;
+    }
+    let number = +prompt('nhập vào bán kính của hình tròn: ');
+    document.write(`Chu vi hình tròn là : ${ChuVi(number)}`);
+    document.write(`<br>Diện tích hình tròn là : ${dienTich(number)}`);
+
+</script>
+</body>
+</html>

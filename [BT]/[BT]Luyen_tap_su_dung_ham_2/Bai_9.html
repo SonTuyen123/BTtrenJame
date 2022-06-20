@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+    Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
+     Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.
+     */
+    let number = prompt('nhập vào độ dài của mảng:');
+    let arr = [];
+    for (let i = 0; i < number; i++) {
+        let x = prompt(`Nhập phần tử thứ ${i + 1} :`);
+        arr.push(x);
+    }
+    let index = 0;
+    let flag = true;
+    let y = prompt('Nhập ký tư kiểm tra: ');
+    for (let i = 0; i < arr.length; i++) {
+        if (y === arr[i]) {
+            index++;
+        }
+    }
+    if (index > 0) {
+        document.write(`ký tự ${y} suất hiện ${index} lần`)
+    } else {
+        document.write(`không có ký tự ${y}`)
+    }
+</script>
+</body>
+</html>
