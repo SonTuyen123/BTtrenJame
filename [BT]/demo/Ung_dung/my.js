@@ -48,8 +48,9 @@ function editBtn() {
     if (!name || !Price || !sll) {
         alert("No empty")
     }else {
-        products.push(item);
+
         let item[name,Price,sll];
+        products.push(item);
         clear();
     }
 }

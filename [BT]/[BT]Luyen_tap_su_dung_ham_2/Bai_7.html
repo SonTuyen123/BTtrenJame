@@ -9,14 +9,16 @@
     /*
     Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.
      */
-    let number = +prompt('nhập vào độ dài của mảng:');
-    let arr =[];
-    for (let i = 0; i < number; i++) {
-        let x = +prompt(`Nhập phần tử thứ ${i + 1} :`);
-        arr.push(x);
+    let a = +prompt('Nhập số đầu tiên');
+    let b = +prompt('Nhập số thứ hai');
+    document.write(`${a}, ${b}<br>`);
+    reseverTwoNumbers(a,b);
+    function reseverTwoNumbers(num1,num2) {
+        let mid = num1;
+        num1=num2;
+        num2=mid;
+        document.write(`${num1}, ${num2}`);
     }
-    let newarr = arr.reverse();
-    document.write(newarr);
 </script>
 </body>
 </html>

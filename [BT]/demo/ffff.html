@@ -7,16 +7,12 @@
 <body>
 <script>
 
-    let a = 1
-    //Tạo ra biến a, lưu giá trị của a vào ô nhớ và gán lại địa chỉ ô nhớ cho biến a (a = #a001)
+    let str = "Học JavaScript hay Web?";
 
-    let b = a
-    //Tạo ra biến b và gán giá trị của biến a cho b, ở đây chính là địa chỉ địa chỉ ô nhớ của a (b =#a001)
+    // Sử dụng split() để tách chuỗi -> từ
+    let substrings = str.split(" ");
 
-    a = 2
-    //Sửa giá trị của biến a thì giá trị trong ô nhớ được cập nhật
-
-    console.log(b) // { name: "dog" }
+    console.log(substrings);
 
 </script>
 </body>
