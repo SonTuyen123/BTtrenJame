@@ -2,29 +2,29 @@ class Rectangle{
     height;
     width;
     constructor(height, width) {
-        this._height = height;
-        this._width = width;
+        this.height = height;
+        this.width = width;
     }
     ChuVi(){
-       return  2 *(this._height + this._width);
+       return  2 *(this.height + this.width);
     }
     DienTich(){
-        return (this._height * this._width);
+        return (this.height * this.width);
     }
 
     getheight() {
-        return this._height;
+        return this.height;
     }
 
     setheight(value) {
-        this._height = value;
+        this.height = value;
     }
 
     getwidth() {
-        return this._width;
+        return this.width;
     }
 
     setwidth(value) {
-        this._width = value;
+        this.width = value;
     }
 }
