@@ -29,12 +29,7 @@ class Apple {
         }
     }
 }
-
 class Human {
-    name;
-    _gender;
-    _weight;
-
     constructor(name, gender, weight) {
         this._name = name;
         this._gender = gender;
@@ -75,15 +70,18 @@ class Human {
     checkApple(){
         return Apple.isEmpty;
     }
-    eat(){
-        if(Apple.getWeight() > 0){
-            Apple.decrease();
-            this._weight ++;
-        }else{
-            alert('táo đã ăn hết');
+    eat(apple){
+        if(apple.getWeight() > 0){
+            apple.decrease(); //1
+            this._weight++; //66
+        }else {
+            alert("Táo đã hết");
         }
     }
     say(string){
         console.log(string);
+    }
+    getInfo(human){
+        alert(human.name + " " +human.weight + " " +human.getGender());
     }
 }
