@@ -1,4 +1,4 @@
-let main = new Mobile(99,[],[],[]);
+let main = new Mobile(90,[],[],[]);
 main.changeBattery();
 main.massagergo();
 main.writemessager();
